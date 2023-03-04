@@ -1,0 +1,27 @@
+.post_layout {
+	display: grid;
+	height: 100%;
+	width: 100%;
+	grid-template-rows: 1fr;
+	grid-template-columns: 12rem 1fr;
+	gap: 10px;
+}
+
+.aside {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(49, 49, 49);
+	padding: 10px;
+	overflow: scroll;
+	height: 898px;
+}
+
+.aside a {
+	padding: 10px;
+	margin-bottom: 5px;
+	background-color: rgb(91, 91, 91);
+}
+
+.main {
+	padding: 20px;
+}
