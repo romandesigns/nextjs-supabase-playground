@@ -3,6 +3,5 @@ import supabase from "@/lib/supabaseClient";
 
 export default async function Page() {
 	const { data: rooms } = await supabase.from("rooms").select("*");
-	console.log(rooms);
-	return <h1>Test</h1>;
+	return <h1>{rooms[0].room_type}</h1>;
 }
